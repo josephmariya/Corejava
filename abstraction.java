@@ -1,20 +1,20 @@
 package corejava;
 
-abstract class Animal1
+abstract class Animal1//abstract class
 {
 	private String name;
 	public Animal1(String name)
 	{
 		this.name=name;
 	}
-	public abstract void eat();
-	public abstract void breathe();
+	public abstract void eat();//abstract method
+	public abstract void breathe();//abstract method
 	public String getName()
 	{
 		return name;
 	}
 }
-class Racoon extends Animal1
+class Racoon extends Animal1//inherited class
 {
 	public Racoon(String name)
 	{
