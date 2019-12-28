@@ -1,14 +1,15 @@
 package corejava;
 import java.util.Scanner;
 public class classobj1a {
-	public String name,address,ph,email,ptype,pid;
+	public String name,address,ph,email,ptype,pid;//data members
 	
 	public static void main(String args[])
 	{
 		Scanner obj=new Scanner(System.in);
-		classobj1a ob=new classobj1a();
+		classobj1a ob=new classobj1a();//object of classobj1a is created
+		//Read values into 
 		System.out.println("Enter your name:");
-	    ob.name=obj.nextLine();
+	        ob.name=obj.nextLine();
 		System.out.println("Enter your address:");
 		ob.address=obj.nextLine();
 		System.out.println("Enter your Contact Number:");
