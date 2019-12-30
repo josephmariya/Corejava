@@ -28,7 +28,7 @@ public class classobj3b {
 	{
 		this.pid=pid;	
 	}
-	//get method is used to get value from variables
+	//get method is used to get value from variable
 	public String getname()
 	{
 		return this.name;	
