@@ -3,8 +3,8 @@ package corejava;
 import java.util.Scanner;
 
 public class classobj2a {
-	public String name,address,ph,email,ptype,pid;
-	public  classobj2a(String name,String address,String ph,String email,String ptype,String pid)
+	public String name,address,ph,email,ptype,pid;//data members
+	public  classobj2a(String name,String address,String ph,String email,String ptype,String pid)//constructor
 	{
 		this.name=name;
 		this.address=address;
@@ -13,7 +13,7 @@ public class classobj2a {
 		this.ptype=ptype;
 		this.pid=pid;
 	}
-	public void register()
+	public void register()//member function
 	{
 		
 		System.out.println("Thank you for registering.Your details are as follows :");
@@ -28,9 +28,8 @@ public class classobj2a {
 	public static void main(String args[])
 	{
 		Scanner obj=new Scanner(System.in);
-		
 		System.out.println("Enter your name:");
-	    String name=obj.nextLine();
+	        String name=obj.nextLine();
 		System.out.println("Enter your address:");
 		String address=obj.nextLine();
 		System.out.println("Enter your Contact Number:");
@@ -41,8 +40,8 @@ public class classobj2a {
 		String ptype=obj.nextLine();
 		System.out.println("Enter your Proof id:");
 		String pid=obj.nextLine();
-		classobj2a ob=new classobj2a(name,address,ph,email,ptype,pid);
-		ob.register();
+		classobj2a ob=new classobj2a(name,address,ph,email,ptype,pid);//invoking constructor
+		ob.register();//invoking member function using object
 		
 	}
 
