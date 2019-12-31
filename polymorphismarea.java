@@ -2,31 +2,31 @@ package corejava;
 import java.util.Scanner;
 public class polymorphismarea {
 	
-	public void findarea(float r)
+	public void findarea(float r)//method overloaded
 	{
 		float a=(float)(3.14*r*r);
 		System.out.println("Area of circle is :"+a);
 	}
-    public void findarea(int l,int b)
+    public void findarea(int l,int b)//method overloaded
     {
 
-		int a=l*b;
-		System.out.println("Area of rectangle is :"+a);
+	int a=l*b;
+	System.out.println("Area of rectangle is :"+a);
     }
-    public void findarea(int s)
+    public void findarea(int s)//method overloaded
     {
     	int a=s*s;
-		System.out.println("Area of square is :"+a);
+        System.out.println("Area of square is :"+a);
     }
-    public void findarea(float base,float h)
+    public void findarea(float base,float h)//method overloaded
     {
     	float a=(float)(0.5*base*h);
-		System.out.println("Area of triangle is :"+a);
+        System.out.println("Area of triangle is :"+a);
     }
     public static void main(String args[])
     {
     	Scanner obj=new Scanner(System.in);
-    	polymorphismarea ob=new polymorphismarea();
+    	polymorphismarea ob=new polymorphismarea();//Object created
     	String s1;
     	do
     	{
@@ -37,31 +37,31 @@ public class polymorphismarea {
     		case 1:
     	             System.out.println("\nEnter radius of circle :");
     	             float r=obj.nextFloat();
-    	             ob.findarea(r);
+    	             ob.findarea(r);//method invoked
     	             break;
     		case 2:
-                   	 System.out.println("\nEnter length of rectangle :");
+                     System.out.println("\nEnter length of rectangle :");
     	             int l=obj.nextInt();
     	             System.out.println("Enter breadth of rectangle :");
     	             int b=obj.nextInt();
-    	             ob.findarea(l,b);
+    	             ob.findarea(l,b);//method invoked
     	             break;
     		case 3:
     	             System.out.println("\nEnter side of square :");
     	             int s=obj.nextInt();
-    	             ob.findarea(s);
+    	             ob.findarea(s);//method invoked
     	             break;
     		case 4:
     	             System.out.println("\nEnter base of triangle :");
     	             float base=obj.nextFloat();
     	             System.out.println("Enter height of triangle :");
     	             float h=obj.nextFloat();
-    	             ob.findarea(base,h);
+    	             ob.findarea(base,h);//method invoked
     	             break;
     	    default :  System.out.println("Invalid");
     	    
     		}
-    		obj.nextLine();
+    		obj.nextLine();//for buffering
     		System.out.println("Do you want to continue?(y/n)");
     		s1=obj.nextLine();
     	}while((s1.equals("y"))||(s1.equals("Y")));
