@@ -1,9 +1,9 @@
 package corejava;
 
 public class encapsulation1b {
-public String name,address,ph,email,ptype,pid;
+        public String name,address,ph,email,ptype,pid;//datamembers
 	
-	
+	//set() methods used to set values into datamembers
 	public void setname(String name)
 	{
 		
@@ -42,10 +42,11 @@ public String name,address,ph,email,ptype,pid;
 		this.pid=pid;
 		
 	}
+        //get() methods uset to get values from datamembers
 	public String getname()
 	{
 	
-		return this.name;
+		return this.name;rs
 		
 	}
 	public String getaddress()
