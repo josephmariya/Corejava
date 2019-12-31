@@ -9,7 +9,7 @@ public class encapsulation1a {
 	Scanner obj=new Scanner(System.in);
 	
 	System.out.println("Enter your name:");
-    String name=obj.nextLine();
+        String name=obj.nextLine();
 	System.out.println("Enter your address:");
 	String address=obj.nextLine();
 	System.out.println("Enter your Contact Number:");
@@ -20,7 +20,8 @@ public class encapsulation1a {
 	String ptype=obj.nextLine();
 	System.out.println("Enter your Proof id:");
 	String pid=obj.nextLine();
-	encapsulation1b ob=new encapsulation1b();
+	encapsulation1b ob=new encapsulation1b();//Creating object for class encapsulation1b
+        //set() method is used to set values into datamembers		
 	ob.setname(name);
 	ob.setaddress(address);
 	ob.setph(ph);
@@ -28,6 +29,7 @@ public class encapsulation1a {
 	ob.setptype(ptype);
 	ob.setpid(pid);
 	System.out.println("Thank you for registering.Your details are as follows :");
+	//get() method is used to get values from datamembers
 	System.out.println("Name: "+ob.getname());
 	System.out.println("Address :"+ob.getaddress());
 	System.out.println("Contact Number :"+ob.getph());
