@@ -22,4 +22,4 @@ public class inheritedclass1 implements interfacea1,interfacea2{
 		int result=a/b;
 		System.out.println("Division result is :"+result);
 	}
-}
+} 
