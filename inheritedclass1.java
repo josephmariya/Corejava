@@ -1,8 +1,8 @@
 package interfacesample;
 
 public class inheritedclass1 implements interfacea1,interfacea2{
-	
-	public void add(int a,int b)
+	//Implementation of abstract methods
+	public void add(int a,int b) 
 	{
 		int result=a+b;
 		System.out.println("Sum is :"+result);
