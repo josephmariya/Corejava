@@ -12,3 +12,4 @@ public class inherited1 extends abstractclass1 {
 		super.substract(a,b);
 	}
 }
+ 
