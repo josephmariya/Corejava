@@ -14,3 +14,4 @@ public class main1 {
 	  ob.substract(a,b);
 	}
 }
+ 
