@@ -18,3 +18,4 @@ public class interfacemain1 extends inheritedclass1{
 	}
  
 }
+ 
